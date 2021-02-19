@@ -1,0 +1,44 @@
+@startuml
+object portal.bisaai.id
+object exppar.bisaai.id
+object expbig.bisaai.id
+object admin
+
+object gate.bisaai.id {
+hawagym.javafirst.id
+ehosdev.javafirst.id
+liburania.javafirst.id
+portal.hawagym.id
+gate.hawagym.id
+}
+
+object vcon.bisaai.id {
+app.tupay.net
+gate.tupay.net
+portal.tupay.net
+dua.bisaai.id
+satu.bisaai.id
+}
+
+object gate.tellhealth.id {
+portal.tellhealth.id
+satu.tellhealth.id
+dua.tellhealth.id
+micro1.service
+micro3.service
+micro2.service
+}
+
+admin --> portal.bisaai.id
+admin --> exppar.bisaai.id
+admin --> expbig.bisaai.id
+portal.bisaai.id --> gate.bisaai.id
+exppar.bisaai.id --> gate.bisaai.id
+expbig.bisaai.id --> gate.bisaai.id
+portal.bisaai.id --> vcon.bisaai.id
+exppar.bisaai.id --> vcon.bisaai.id
+expbig.bisaai.id --> vcon.bisaai.id
+portal.bisaai.id --> gate.tellhealth.id
+exppar.bisaai.id --> gate.tellhealth.id
+expbig.bisaai.id --> gate.tellhealth.id
+@enduml
